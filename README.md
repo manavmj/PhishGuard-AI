@@ -1,211 +1,207 @@
-# 🛡️ PhishGuard-AI
+# PhishGuard-AI 🔐
 
-An AI-powered phishing detection system that helps identify malicious URLs, suspicious websites, and phishing attempts using Machine Learning and Cybersecurity techniques.
+### AI-Based Phishing Detection System for Email and Messaging Platforms
 
-## 🚀 Overview
+PhishGuard-AI is an intelligent phishing detection system that uses **Machine Learning** and **Natural Language Processing (NLP)** to identify malicious messages in emails and messaging platforms.
 
-Phishing attacks are one of the most common cybersecurity threats today. **PhishGuard-AI** is designed to detect phishing websites and suspicious links using intelligent machine learning models and feature-based URL analysis.
-
-This project combines:
-
-* 🔍 URL feature extraction
-* 🤖 Machine Learning classification
-* 🛡️ Cybersecurity heuristics
-* 🌐 Web-based phishing analysis
-
-The goal is to provide users with a fast and reliable way to determine whether a website is safe or potentially harmful. Similar phishing detection systems use ML-based URL analysis and heuristic detection for identifying malicious websites. ([PhishGuardAI][1])
+The project aims to improve cybersecurity awareness by helping users detect phishing attempts before interacting with suspicious content, links, or fraudulent messages.
 
 ---
 
-# ✨ Features
+# 🚀 Features
 
-* ✅ Detect phishing URLs in real-time
-* ✅ Machine Learning-based prediction system
-* ✅ URL feature extraction
-* ✅ User-friendly interface
-* ✅ Fast and lightweight
-* ✅ Cybersecurity-focused detection logic
-* ✅ Easy to train and extend with new datasets
-
----
-
-# 🧠 Tech Stack
-
-## Programming Languages
-
-* Python
-* HTML/CSS/JavaScript
-
-## Libraries & Frameworks
-
-* Scikit-learn
-* Pandas
-* NumPy
-* Flask (if backend used)
-* Joblib/Pickle
-
-## Machine Learning
-
-* Classification Algorithms
-* Feature Engineering
-* URL-based phishing detection
+* 🔍 Detects phishing messages using Machine Learning
+* 📩 Supports Email and Messaging-style text analysis
+* 🧠 NLP-based text preprocessing
+* ⚡ Real-time phishing prediction
+* 📊 Risk-based classification system
+* 🖥️ Dynamic and user-friendly interface
+* 📁 Message history storage
+* 🔐 Cybersecurity-focused architecture
 
 ---
 
-# 📂 Project Structure
+# 🧠 How It Works
 
-```bash
-PhishGuard-AI/
-│
-├── dataset/               # Dataset files
-├── model/                 # Trained ML models
-├── static/                # CSS, JS, images
-├── templates/             # HTML templates
-├── app.py                 # Main Flask application
-├── train_model.py         # Model training script
-├── requirements.txt       # Dependencies
-└── README.md
+```text
+User Message Input
+        ↓
+Text Preprocessing
+        ↓
+TF-IDF Vectorization
+        ↓
+Machine Learning Model
+        ↓
+Risk Analysis
+        ↓
+Prediction Result
 ```
 
+The system analyzes textual patterns commonly found in phishing attacks and predicts whether the message is:
+
+* ✅ Safe
+* ⚠️ Suspicious
+* ❌ Phishing
+
 ---
 
-# ⚙️ Installation
+# 🛠️ Tech Stack
 
-## 1️⃣ Clone the Repository
+| Technology        | Purpose                   |
+| ----------------- | ------------------------- |
+| Python            | Core Programming Language |
+| Flask             | Backend Framework         |
+| Scikit-learn      | Machine Learning          |
+| NLTK              | NLP & Text Preprocessing  |
+| TF-IDF Vectorizer | Feature Extraction        |
+| Naive Bayes       | Text Classification       |
+| SQLite            | Database Management       |
+| HTML/CSS          | Frontend Design           |
+| Bootstrap         | Responsive UI             |
+| JavaScript        | Dynamic UI Interactions   |
+| Git & GitHub      | Version Control           |
+
+---
+
+# 🤖 Machine Learning Workflow
+
+### 1️⃣ Dataset Collection
+
+The dataset contains phishing and legitimate messages labeled for supervised learning.
+
+### 2️⃣ Text Preprocessing
+
+* Lowercasing
+* Stopword removal
+* Tokenization
+* Stemming
+
+### 3️⃣ Feature Extraction
+
+TF-IDF Vectorization converts text into numerical vectors based on word importance.
+
+### 4️⃣ Model Training
+
+A Naive Bayes classifier is trained to identify phishing patterns in messages.
+
+### 5️⃣ Prediction
+
+The trained model predicts whether a message is phishing or legitimate.
+
+---
+
+# 📷 Project Screenshots
+
+## 🏠 Start
+
+<img width="2157" height="1520" alt="Screenshot 2026-04-23 114545" src="https://github.com/user-attachments/assets/dedb9ba3-516d-4516-b810-738913e2937d" />
+
+
+## 🔍 Message Detection 
+
+<img width="2164" height="1529" alt="Screenshot 2026-04-23 114726" src="https://github.com/user-attachments/assets/6b3ff832-64bf-480b-87f3-185c7e320a8d" />
+
+
+## ⚠️ Phishing Detection Result
+
+<img width="2162" height="1532" alt="Screenshot 2026-04-23 114752" src="https://github.com/user-attachments/assets/65b15f26-7a4e-4a9e-a535-191ce922c80f" />
+
+
+---
+
+# 🎯 Why Naive Bayes?
+
+Naive Bayes was selected because:
+
+* It performs efficiently for text classification
+* Requires low computational resources
+* Provides fast prediction
+* Works well with TF-IDF features
+
+---
+
+# 🌍 Social Impact
+
+Phishing attacks are one of the most common cyber threats affecting students, employees, and non-technical users.
+
+PhishGuard-AI helps:
+
+* Prevent online fraud
+* Improve cybersecurity awareness
+* Reduce chances of credential theft
+* Promote safer digital communication
+
+---
+
+# 🔮 Future Scope
+
+* Telegram Bot Integration
+* Browser Extension Support
+* Real-time URL Scanning
+* Multilingual Phishing Detection
+* Image-based Phishing Analysis
+* Advanced Deep Learning Models
+
+---
+
+# ⚙️ Installation & Setup
+
+## Clone the Repository
 
 ```bash
 git clone https://github.com/manavmj/PhishGuard-AI.git
 cd PhishGuard-AI
 ```
 
-## 2️⃣ Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-### Activate Environment
-
-#### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-#### Linux/Mac
-
-```bash
-source venv/bin/activate
-```
-
----
-
-## 3️⃣ Install Dependencies
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-# ▶️ Run the Project
+## Run the Application
 
 ```bash
 python app.py
 ```
 
-Open your browser and visit:
+Visit:
 
-```bash
-http://127.0.0.1:5000
+```text
+http://localhost:5000
 ```
 
 ---
 
-# 🧪 How It Works
+# 📂 Project Structure
 
-The system analyzes URLs using multiple phishing indicators such as:
-
-* URL length
-* Presence of suspicious characters
-* HTTPS usage
-* Domain-related patterns
-* Redirection behavior
-* Keyword analysis
-
-The extracted features are then passed into a trained Machine Learning model that predicts whether the URL is:
-
-* ✅ Legitimate
-* ⚠️ Suspicious
-* ❌ Phishing
-
-Modern phishing detection systems commonly use ML-based feature extraction and ensemble learning techniques for high detection accuracy. ([phish-guard-ai-lac.vercel.app][2])
-
----
-
-# 📊 Future Improvements
-
-* 🔹 Browser extension integration
-* 🔹 Real-time threat intelligence APIs
-* 🔹 Deep Learning models
-* 🔹 Email phishing detection
-* 🔹 User authentication system
-* 🔹 Dashboard analytics
-
----
-
-# 📸 Screenshots
-
-*Add screenshots of your application here.*
-
-Example:
-
-```md
-![Home Page](screenshots/home.png)
-![Detection Result](screenshots/result.png)
+```text
+PhishGuard-AI/
+│
+├── app.py
+├── model/
+├── static/
+├── templates/
+├── dataset/
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-# 🤝 Contributing
+# 👨‍💻 Contributors
 
-Contributions are welcome!
-
-## Steps to Contribute
-
-1. Fork the repository
-2. Create a new branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Added new feature"
-```
-
-4. Push to your branch
-
-```bash
-git push origin feature-name
-```
-
-
-
-
-# ⭐ Support
-
-If you like this project:
-
-* 🌟 Star the repository
-* 🍴 Fork the project
-* 📢 Share it with others
+* Manav Jain
+* Manav Golani
 
 ---
 
-# 🔐 Disclaimer
+# 📜 License
 
-This project is developed for **educational and research purposes only**.
-Always use cybersecurity tools ethically and responsibly.
+This project is developed for educational and research purposes.
+
+---
+
+# ⭐ Conclusion
+
+PhishGuard-AI demonstrates how Machine Learning and NLP can be applied to solve real-world cybersecurity challenges through intelligent phishing detection and user awareness systems.
