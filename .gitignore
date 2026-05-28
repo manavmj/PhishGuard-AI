@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+venv/
+.env
+__pycache__/
+*.pyc
+temp_*
+=======
 node_modules/
 build/
 dist/
@@ -6,3 +13,4 @@ coverage/
 *.log
 .env*
 !.env.example
+>>>>>>> de45376f0c2a0686affd2024a1152ebc20d80873
