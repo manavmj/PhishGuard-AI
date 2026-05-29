@@ -268,6 +268,15 @@ The project focuses on protecting users from:
 * Multilingual Scam Detection
 
 ---
+# screenshots:
+<img width="2157" height="1520" alt="Screenshot 2026-04-23 114545" src="https://github.com/user-attachments/assets/56e4d68f-3b2b-46a0-8872-57679066f9c7" />
+
+<img width="2164" height="1529" alt="Screenshot 2026-04-23 114726" src="https://github.com/user-attachments/assets/9079b120-ac53-4ae7-a3a6-1416497f2894" />
+
+<img width="2162" height="1532" alt="Screenshot 2026-04-23 114752" src="https://github.com/user-attachments/assets/07772352-de46-4dcd-9ac0-684322726ef8" />
+
+
+
 
 # 👨‍💻 Developed By
 
